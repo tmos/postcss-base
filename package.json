@@ -1,0 +1,33 @@
+{
+  "name": "gulpfile-magento",
+  "version": "0.0.1",
+  "description": "Gulpfile for Magento 1.9",
+  "main": "gulpfile.js",
+  "keywords": [
+    "gulpfile",
+    "magento",
+    "gulp",
+    "magento"
+  ],
+  "author": "Tom Canac",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "browser-sync": "^2.12.3",
+    "css-mqpacker": "^5.0.1",
+    "cssnano": "^3.7.3",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.0.2",
+    "gulp-jscs": "^4.0.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-less": "^3.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-easings": "^0.3.0",
+    "postcss-mixins": "^5.0.0",
+    "postcss-nesting": "^2.3.1",
+    "postcss-simple-vars": "^3.0.0"
+  }
+}

@@ -1,0 +1,79 @@
+/**
+ * https://en.bem.info/methodology/
+ * http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
+ */
+
+/***********************************
+ *                                 *
+ *         Variables               *
+ *                                 *
+ ***********************************/
+
+$pad_sm: 15px;
+$pad_md: 30px;
+$pad_lg: 60px;
+
+$color_title: #3f526b;
+$color_highlight: #e23B00;
+
+/***********************************
+ *                                 *
+ *       Custom media queries      *
+ *                                 *
+ ***********************************/
+
+@custom-media --xxs (max-width: 480px);
+@custom-media  --xs (max-width: 767px);
+
+@custom-media --sm-only (min-width: 767px) and (max-width: 991px);
+@custom-media  --sm-min (min-width: 767px);
+@custom-media  --sm-max (max-width: 991px);
+
+@custom-media --md-only (min-width: 992px) and (max-width: 1199px);
+@custom-media  --md-min (min-width: 992px);
+@custom-media  --md-max (max-width: 1199px);
+
+@custom-media --lg (min-width: 1200px);
+
+/***********************************
+ *                                 *
+ *         BEM components          *
+ *                                 *
+ ***********************************/
+
+.block {
+    &__element {
+        &--modifier {
+
+        }
+    }
+}
+
+.profile {
+    border:solid 1px #000;
+    padding: $pad_sm;
+
+    &__team-name {
+        color: $color_title;
+
+        &--team-of-the-week {
+            color: $color_highlight;
+        }
+    }
+
+    &__avatar {
+        border-radius: 50%;
+
+        &--team-member {
+            box-shadow: 0 0 1px #000;
+            transition: all 600ms ease-in-sine;
+
+            &:hover {
+                box-shadow: 0 0 3px #000;
+            }
+        }
+    }
+
+
+
+}
