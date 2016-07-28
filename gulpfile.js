@@ -14,7 +14,7 @@ var sourcemaps = require('gulp-sourcemaps'),
     require('postcss-simple-vars'),
     require('postcss-easings'),
     require('postcss-custom-media'),
-    require("css-mqpacker"),
+    require('css-mqpacker'),
     require('cssnano')({safe:true}),
     require('autoprefixer')({browsers: ['last 2 version']})
 ];
